@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20B256D16773678005F5A82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B256C16773678005F5A82 /* UIKit.framework */; };
+		B20B256F16773678005F5A82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B256E16773678005F5A82 /* Foundation.framework */; };
+		B20B257116773678005F5A82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B257016773678005F5A82 /* CoreGraphics.framework */; };
+		B20B257716773678005F5A82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20B257516773678005F5A82 /* InfoPlist.strings */; };
+		B20B257916773678005F5A82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B257816773678005F5A82 /* main.m */; };
+		B20B257D16773678005F5A82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B257C16773678005F5A82 /* AppDelegate.m */; };
+		B20B257F16773678005F5A82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B257E16773678005F5A82 /* Default.png */; };
+		B20B258116773678005F5A82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258016773678005F5A82 /* Default@2x.png */; };
+		B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258216773678005F5A82 /* Default-568h@2x.png */; };
+		B20B25AE16773A9B005F5A82 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = B20B25A716773A9B005F5A82 /* base64.c */; };
+		B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */; };
+		B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AD16773A9B005F5A82 /* SRWebSocket.m */; };
+		B20B25BE167745F0005F5A82 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BD167745F0005F5A82 /* libicucore.dylib */; };
+		B20B25C016774600005F5A82 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BF16774600005F5A82 /* CFNetwork.framework */; };
+		B20B25C216774608005F5A82 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25C116774607005F5A82 /* Security.framework */; };
+		B245D833168E876400879092 /* Pomelo.m in Sources */ = {isa = PBXBuildFile; fileRef = B245D82F168E871300879092 /* Pomelo.m */; };
+		B245D835168E876400879092 /* PomeloProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B245D831168E871300879092 /* PomeloProtocol.m */; };
+		B26482EA16898055006D39A1 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482DF168949FC006D39A1 /* SocketIO.m */; };
+		B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */; };
+		B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E3168949FC006D39A1 /* SocketIOPacket.m */; };
+		B26482F116898055006D39A1 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */; };
+		B26482F316898055006D39A1 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */; };
+		B280B8BD168C4806002B48AF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8BB168C4806002B48AF /* LoginViewController.m */; };
+		B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B280B8BC168C4806002B48AF /* LoginViewController.xib */; };
+		B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C0168C506B002B48AF /* ContactsViewController.m */; };
+		B280B8C5168C5248002B48AF /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C3168C5248002B48AF /* ChatViewController.m */; };
+		B280B8C6168C5248002B48AF /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B280B8C4168C5248002B48AF /* ChatViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20B256816773678005F5A82 /* PomeloChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomeloChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20B256C16773678005F5A82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B20B256E16773678005F5A82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B20B257016773678005F5A82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B20B257416773678005F5A82 /* PomeloChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PomeloChat-Info.plist"; sourceTree = "<group>"; };
+		B20B257616773678005F5A82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20B257816773678005F5A82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B20B257A16773678005F5A82 /* PomeloChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PomeloChat-Prefix.pch"; sourceTree = "<group>"; };
+		B20B257B16773678005F5A82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B20B257C16773678005F5A82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B20B257E16773678005F5A82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B20B258016773678005F5A82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B20B258216773678005F5A82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B20B25A716773A9B005F5A82 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
+		B20B25A816773A9B005F5A82 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
+		B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		B20B25AC16773A9B005F5A82 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		B20B25AD16773A9B005F5A82 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		B20B25BD167745F0005F5A82 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B20B25BF16774600005F5A82 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B20B25C116774607005F5A82 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B245D82E168E871300879092 /* Pomelo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Pomelo.h; path = Pomelo/Pomelo.h; sourceTree = "<group>"; };
+		B245D82F168E871300879092 /* Pomelo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Pomelo.m; path = Pomelo/Pomelo.m; sourceTree = "<group>"; };
+		B245D830168E871300879092 /* PomeloProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PomeloProtocol.h; path = Pomelo/PomeloProtocol.h; sourceTree = "<group>"; };
+		B245D831168E871300879092 /* PomeloProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PomeloProtocol.m; path = Pomelo/PomeloProtocol.m; sourceTree = "<group>"; };
+		B26482DE168949FC006D39A1 /* SocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = SocketIO/SocketIO.h; sourceTree = "<group>"; };
+		B26482DF168949FC006D39A1 /* SocketIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = SocketIO/SocketIO.m; sourceTree = "<group>"; };
+		B26482E0168949FC006D39A1 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = SocketIO/SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = SocketIO/SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		B26482E2168949FC006D39A1 /* SocketIOPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = SocketIO/SocketIOPacket.h; sourceTree = "<group>"; };
+		B26482E3168949FC006D39A1 /* SocketIOPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = SocketIO/SocketIOPacket.m; sourceTree = "<group>"; };
+		B26482E4168949FC006D39A1 /* SocketIOTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = SocketIO/SocketIOTransport.h; sourceTree = "<group>"; };
+		B26482E5168949FC006D39A1 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = SocketIO/SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = SocketIO/SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		B26482E7168949FC006D39A1 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = SocketIO/SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = SocketIO/SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		B280B8BA168C4806002B48AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B280B8BB168C4806002B48AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B280B8BC168C4806002B48AF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B280B8BF168C506B002B48AF /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		B280B8C0168C506B002B48AF /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		B280B8C2168C5248002B48AF /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		B280B8C3168C5248002B48AF /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		B280B8C4168C5248002B48AF /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20B256516773678005F5A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B25C216774608005F5A82 /* Security.framework in Frameworks */,
+				B20B25C016774600005F5A82 /* CFNetwork.framework in Frameworks */,
+				B20B25BE167745F0005F5A82 /* libicucore.dylib in Frameworks */,
+				B20B256D16773678005F5A82 /* UIKit.framework in Frameworks */,
+				B20B256F16773678005F5A82 /* Foundation.framework in Frameworks */,
+				B20B257116773678005F5A82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20B255D16773678005F5A82 = {
+			isa = PBXGroup;
+			children = (
+				B20B257216773678005F5A82 /* PomeloChat */,
+				B20B256B16773678005F5A82 /* Frameworks */,
+				B20B256916773678005F5A82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20B256916773678005F5A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20B256816773678005F5A82 /* PomeloChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20B256B16773678005F5A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20B25C116774607005F5A82 /* Security.framework */,
+				B20B25BF16774600005F5A82 /* CFNetwork.framework */,
+				B20B25BD167745F0005F5A82 /* libicucore.dylib */,
+				B20B256C16773678005F5A82 /* UIKit.framework */,
+				B20B256E16773678005F5A82 /* Foundation.framework */,
+				B20B257016773678005F5A82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20B257216773678005F5A82 /* PomeloChat */ = {
+			isa = PBXGroup;
+			children = (
+				B2933D761682BA1500A15757 /* Pomelo */,
+				B20B25901677369F005F5A82 /* SocketRocket */,
+				B20B258F1677368A005F5A82 /* SocketIO */,
+				B20B257B16773678005F5A82 /* AppDelegate.h */,
+				B20B257C16773678005F5A82 /* AppDelegate.m */,
+				B20B257316773678005F5A82 /* Supporting Files */,
+				B280B8BA168C4806002B48AF /* LoginViewController.h */,
+				B280B8BB168C4806002B48AF /* LoginViewController.m */,
+				B280B8BC168C4806002B48AF /* LoginViewController.xib */,
+				B280B8BF168C506B002B48AF /* ContactsViewController.h */,
+				B280B8C0168C506B002B48AF /* ContactsViewController.m */,
+				B280B8C2168C5248002B48AF /* ChatViewController.h */,
+				B280B8C3168C5248002B48AF /* ChatViewController.m */,
+				B280B8C4168C5248002B48AF /* ChatViewController.xib */,
+			);
+			path = PomeloChat;
+			sourceTree = "<group>";
+		};
+		B20B257316773678005F5A82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20B257416773678005F5A82 /* PomeloChat-Info.plist */,
+				B20B257516773678005F5A82 /* InfoPlist.strings */,
+				B20B257816773678005F5A82 /* main.m */,
+				B20B257A16773678005F5A82 /* PomeloChat-Prefix.pch */,
+				B20B257E16773678005F5A82 /* Default.png */,
+				B20B258016773678005F5A82 /* Default@2x.png */,
+				B20B258216773678005F5A82 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20B258F1677368A005F5A82 /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				B26482DE168949FC006D39A1 /* SocketIO.h */,
+				B26482DF168949FC006D39A1 /* SocketIO.m */,
+				B26482E0168949FC006D39A1 /* SocketIOJSONSerialization.h */,
+				B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */,
+				B26482E2168949FC006D39A1 /* SocketIOPacket.h */,
+				B26482E3168949FC006D39A1 /* SocketIOPacket.m */,
+				B26482E4168949FC006D39A1 /* SocketIOTransport.h */,
+				B26482E5168949FC006D39A1 /* SocketIOTransportWebsocket.h */,
+				B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */,
+				B26482E7168949FC006D39A1 /* SocketIOTransportXHR.h */,
+				B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		B20B25901677369F005F5A82 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				B20B25A716773A9B005F5A82 /* base64.c */,
+				B20B25A816773A9B005F5A82 /* base64.h */,
+				B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */,
+				B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */,
+				B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */,
+				B20B25AC16773A9B005F5A82 /* SRWebSocket.h */,
+				B20B25AD16773A9B005F5A82 /* SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			sourceTree = "<group>";
+		};
+		B2933D761682BA1500A15757 /* Pomelo */ = {
+			isa = PBXGroup;
+			children = (
+				B245D82E168E871300879092 /* Pomelo.h */,
+				B245D82F168E871300879092 /* Pomelo.m */,
+				B245D830168E871300879092 /* PomeloProtocol.h */,
+				B245D831168E871300879092 /* PomeloProtocol.m */,
+			);
+			name = Pomelo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20B256716773678005F5A82 /* PomeloChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20B258C16773678005F5A82 /* Build configuration list for PBXNativeTarget "PomeloChat" */;
+			buildPhases = (
+				B20B256416773678005F5A82 /* Sources */,
+				B20B256516773678005F5A82 /* Frameworks */,
+				B20B256616773678005F5A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PomeloChat;
+			productName = PomeloChat;
+			productReference = B20B256816773678005F5A82 /* PomeloChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20B255F16773678005F5A82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "netease pomelo team";
+			};
+			buildConfigurationList = B20B256216773678005F5A82 /* Build configuration list for PBXProject "PomeloChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B20B255D16773678005F5A82;
+			productRefGroup = B20B256916773678005F5A82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20B256716773678005F5A82 /* PomeloChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20B256616773678005F5A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20B257716773678005F5A82 /* InfoPlist.strings in Resources */,
+				B20B257F16773678005F5A82 /* Default.png in Resources */,
+				B20B258116773678005F5A82 /* Default@2x.png in Resources */,
+				B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */,
+				B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */,
+				B280B8C6168C5248002B48AF /* ChatViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20B256416773678005F5A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B245D833168E876400879092 /* Pomelo.m in Sources */,
+				B245D835168E876400879092 /* PomeloProtocol.m in Sources */,
+				B26482EA16898055006D39A1 /* SocketIO.m in Sources */,
+				B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */,
+				B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */,
+				B26482F116898055006D39A1 /* SocketIOTransportWebsocket.m in Sources */,
+				B26482F316898055006D39A1 /* SocketIOTransportXHR.m in Sources */,
+				B20B257916773678005F5A82 /* main.m in Sources */,
+				B20B257D16773678005F5A82 /* AppDelegate.m in Sources */,
+				B20B25AE16773A9B005F5A82 /* base64.c in Sources */,
+				B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */,
+				B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */,
+				B280B8BD168C4806002B48AF /* LoginViewController.m in Sources */,
+				B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */,
+				B280B8C5168C5248002B48AF /* ChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B20B257516773678005F5A82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20B257616773678005F5A82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20B258A16773678005F5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B20B258B16773678005F5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20B258D16773678005F5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
+				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B20B258E16773678005F5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
+				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20B256216773678005F5A82 /* Build configuration list for PBXProject "PomeloChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B258A16773678005F5A82 /* Debug */,
+				B20B258B16773678005F5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20B258C16773678005F5A82 /* Build configuration list for PBXNativeTarget "PomeloChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20B258D16773678005F5A82 /* Debug */,
+				B20B258E16773678005F5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20B255F16773678005F5A82 /* Project object */;
+}
