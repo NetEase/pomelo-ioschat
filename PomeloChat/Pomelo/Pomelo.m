@@ -162,7 +162,7 @@ static NSString const *_disconnectCallback = @"__disconnectCallback__";
         NSMutableArray *callbacks = [_callbacks objectForKey:[msg objectForKey:@"route"]];
         if (callbacks != nil) {
             for (PomeloCallback cb in callbacks)  {
-                cb(msg);
+               cb([msg objectForKey:@"body"]);
             }
         }
         
