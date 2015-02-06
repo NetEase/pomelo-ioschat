@@ -7,11 +7,11 @@
 //
 
 #import "ContactsViewController.h"
-#import "ChatViewController.h"
+#import "DemoMessagesViewController.h"
 
 @interface ContactsViewController ()
 
-@property (strong, nonatomic) ChatViewController *chatViewController;
+@property (strong, nonatomic) DemoMessagesViewController *chatViewController;
 
 - (void)initEvents;
 @end
@@ -41,7 +41,7 @@
     self.title = @"Contacts";
     self.navigationItem.hidesBackButton = YES;
     
-    self.chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
+    self.chatViewController = [DemoMessagesViewController new];
     self.chatViewController.pomelo = pomelo;
     [self initEvents];
 }
@@ -50,16 +50,19 @@
 {
     [pomelo onRoute:@"onAdd" withCallback:^(NSDictionary *data){
         NSLog(@"user add -----");
-        NSString *name = [data objectForKey:@"user"];
+        NSDictionary *body = data[@"body"];
+        NSString *name = [body objectForKey:@"user"];
         [self.tableView beginUpdates];
         [contactList addObject:name];
         NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[contactList count]-1 inSection:0]];
         [self.tableView insertRowsAtIndexPaths:paths withRowAnimation:UITableViewRowAnimationTop];
         [self.tableView endUpdates];
+        [self.tableView reloadData];
     }];
     [pomelo onRoute:@"onLeave" withCallback:^(NSDictionary *data){
         NSLog(@"user leave ----");
-        NSString *name = [data objectForKey:@"user"];
+        NSDictionary *body = data[@"body"];
+        NSString *name = [body objectForKey:@"user"];
         if ([contactList containsObject:name]) {
             NSUInteger index = [contactList indexOfObject:name];
             [contactList removeObjectAtIndex:index];
@@ -102,45 +105,6 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

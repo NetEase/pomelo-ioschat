@@ -20,11 +20,11 @@ NSString* const PomeloException = @"PomeloException";
     }
     
     NSString *msg = [NSString stringWithFormat:@"%C%C%C%C%C%@%@",
-                     (id >> 24) & 0xFF,
-                     (id >> 16) & 0xFF,
-                     (id >> 8) & 0xFF,
-                     id & 0xFF,
-                     [route length],
+                     (unichar)((id >> 24) & 0xFF),
+                     (unichar)((id >> 16) & 0xFF),
+                     (unichar)((id >> 8) & 0xFF),
+                     (unichar)(id & 0xFF),
+                     (unichar)[route length],
                      route,
                      body];
     

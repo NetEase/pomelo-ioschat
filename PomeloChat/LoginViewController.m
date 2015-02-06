@@ -38,6 +38,8 @@
     NSString *name = nameText.text;
     NSString *channel = channelText.text;
     
+    [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"login_user"];
+    
     if (([name length] > 0) && ([channel length] > 0)) {
         [pomelo connectToHost:@"127.0.0.1" onPort:3014 withCallback:^(Pomelo *p){
             NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];

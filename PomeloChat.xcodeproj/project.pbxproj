@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43503C869DD62A3C04146D0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9ADE8201222BEED3810122 /* libPods.a */; };
 		B20B256D16773678005F5A82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B256C16773678005F5A82 /* UIKit.framework */; };
 		B20B256F16773678005F5A82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B256E16773678005F5A82 /* Foundation.framework */; };
 		B20B257116773678005F5A82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B257016773678005F5A82 /* CoreGraphics.framework */; };
@@ -16,27 +17,27 @@
 		B20B257F16773678005F5A82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B257E16773678005F5A82 /* Default.png */; };
 		B20B258116773678005F5A82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258016773678005F5A82 /* Default@2x.png */; };
 		B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258216773678005F5A82 /* Default-568h@2x.png */; };
-		B20B25AE16773A9B005F5A82 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = B20B25A716773A9B005F5A82 /* base64.c */; };
-		B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */; };
-		B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AD16773A9B005F5A82 /* SRWebSocket.m */; };
 		B20B25BE167745F0005F5A82 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BD167745F0005F5A82 /* libicucore.dylib */; };
 		B20B25C016774600005F5A82 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BF16774600005F5A82 /* CFNetwork.framework */; };
 		B20B25C216774608005F5A82 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25C116774607005F5A82 /* Security.framework */; };
-		B245D833168E876400879092 /* Pomelo.m in Sources */ = {isa = PBXBuildFile; fileRef = B245D82F168E871300879092 /* Pomelo.m */; };
-		B245D835168E876400879092 /* PomeloProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B245D831168E871300879092 /* PomeloProtocol.m */; };
-		B26482EA16898055006D39A1 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482DF168949FC006D39A1 /* SocketIO.m */; };
-		B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */; };
-		B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E3168949FC006D39A1 /* SocketIOPacket.m */; };
-		B26482F116898055006D39A1 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */; };
-		B26482F316898055006D39A1 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */; };
 		B280B8BD168C4806002B48AF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8BB168C4806002B48AF /* LoginViewController.m */; };
 		B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B280B8BC168C4806002B48AF /* LoginViewController.xib */; };
 		B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C0168C506B002B48AF /* ContactsViewController.m */; };
-		B280B8C5168C5248002B48AF /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C3168C5248002B48AF /* ChatViewController.m */; };
-		B280B8C6168C5248002B48AF /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B280B8C4168C5248002B48AF /* ChatViewController.xib */; };
+		E0CA4C9C1A84D1D5001F2F30 /* Pomelo.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C891A84D1D5001F2F30 /* Pomelo.m */; };
+		E0CA4C9D1A84D1D5001F2F30 /* PomeloProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C8B1A84D1D5001F2F30 /* PomeloProtocol.m */; };
+		E0CA4C9E1A84D1D5001F2F30 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C8E1A84D1D5001F2F30 /* SocketIO.m */; };
+		E0CA4C9F1A84D1D5001F2F30 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C901A84D1D5001F2F30 /* SocketIOJSONSerialization.m */; };
+		E0CA4CA01A84D1D5001F2F30 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C921A84D1D5001F2F30 /* SocketIOPacket.m */; };
+		E0CA4CA11A84D1D5001F2F30 /* SocketIOTransportWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C951A84D1D5001F2F30 /* SocketIOTransportWebsocket.m */; };
+		E0CA4CA21A84D1D5001F2F30 /* SocketIOTransportXHR.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C971A84D1D5001F2F30 /* SocketIOTransportXHR.m */; };
+		E0CA4CA31A84D1D5001F2F30 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4C9B1A84D1D5001F2F30 /* SRWebSocket.m */; };
+		E0CA4CA81A84D585001F2F30 /* DemoMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4CA51A84D585001F2F30 /* DemoMessagesViewController.m */; };
+		E0CA4CA91A84D585001F2F30 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4CA71A84D585001F2F30 /* DemoModelData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A9ADE8201222BEED3810122 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84DDB00CA54D58C476A8963 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B20B256816773678005F5A82 /* PomeloChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomeloChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20B256C16773678005F5A82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B20B256E16773678005F5A82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,39 +51,37 @@
 		B20B257E16773678005F5A82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B20B258016773678005F5A82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B20B258216773678005F5A82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B20B25A716773A9B005F5A82 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
-		B20B25A816773A9B005F5A82 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
-		B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
-		B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
-		B20B25AC16773A9B005F5A82 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
-		B20B25AD16773A9B005F5A82 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
 		B20B25BD167745F0005F5A82 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		B20B25BF16774600005F5A82 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B20B25C116774607005F5A82 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		B245D82E168E871300879092 /* Pomelo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Pomelo.h; path = Pomelo/Pomelo.h; sourceTree = "<group>"; };
-		B245D82F168E871300879092 /* Pomelo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Pomelo.m; path = Pomelo/Pomelo.m; sourceTree = "<group>"; };
-		B245D830168E871300879092 /* PomeloProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PomeloProtocol.h; path = Pomelo/PomeloProtocol.h; sourceTree = "<group>"; };
-		B245D831168E871300879092 /* PomeloProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PomeloProtocol.m; path = Pomelo/PomeloProtocol.m; sourceTree = "<group>"; };
-		B26482DE168949FC006D39A1 /* SocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIO.h; path = SocketIO/SocketIO.h; sourceTree = "<group>"; };
-		B26482DF168949FC006D39A1 /* SocketIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIO.m; path = SocketIO/SocketIO.m; sourceTree = "<group>"; };
-		B26482E0168949FC006D39A1 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOJSONSerialization.h; path = SocketIO/SocketIOJSONSerialization.h; sourceTree = "<group>"; };
-		B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOJSONSerialization.m; path = SocketIO/SocketIOJSONSerialization.m; sourceTree = "<group>"; };
-		B26482E2168949FC006D39A1 /* SocketIOPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOPacket.h; path = SocketIO/SocketIOPacket.h; sourceTree = "<group>"; };
-		B26482E3168949FC006D39A1 /* SocketIOPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOPacket.m; path = SocketIO/SocketIOPacket.m; sourceTree = "<group>"; };
-		B26482E4168949FC006D39A1 /* SocketIOTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransport.h; path = SocketIO/SocketIOTransport.h; sourceTree = "<group>"; };
-		B26482E5168949FC006D39A1 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportWebsocket.h; path = SocketIO/SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
-		B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportWebsocket.m; path = SocketIO/SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
-		B26482E7168949FC006D39A1 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketIOTransportXHR.h; path = SocketIO/SocketIOTransportXHR.h; sourceTree = "<group>"; };
-		B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SocketIOTransportXHR.m; path = SocketIO/SocketIOTransportXHR.m; sourceTree = "<group>"; };
 		B280B8BA168C4806002B48AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B280B8BB168C4806002B48AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B280B8BC168C4806002B48AF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B280B8BF168C506B002B48AF /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		B280B8C0168C506B002B48AF /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
-		B280B8C2168C5248002B48AF /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		B280B8C3168C5248002B48AF /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
-		B280B8C4168C5248002B48AF /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		E0CA4C881A84D1D5001F2F30 /* Pomelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomelo.h; sourceTree = "<group>"; };
+		E0CA4C891A84D1D5001F2F30 /* Pomelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomelo.m; sourceTree = "<group>"; };
+		E0CA4C8A1A84D1D5001F2F30 /* PomeloProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomeloProtocol.h; sourceTree = "<group>"; };
+		E0CA4C8B1A84D1D5001F2F30 /* PomeloProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomeloProtocol.m; sourceTree = "<group>"; };
+		E0CA4C8D1A84D1D5001F2F30 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
+		E0CA4C8E1A84D1D5001F2F30 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
+		E0CA4C8F1A84D1D5001F2F30 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
+		E0CA4C901A84D1D5001F2F30 /* SocketIOJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOJSONSerialization.m; sourceTree = "<group>"; };
+		E0CA4C911A84D1D5001F2F30 /* SocketIOPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOPacket.h; sourceTree = "<group>"; };
+		E0CA4C921A84D1D5001F2F30 /* SocketIOPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOPacket.m; sourceTree = "<group>"; };
+		E0CA4C931A84D1D5001F2F30 /* SocketIOTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransport.h; sourceTree = "<group>"; };
+		E0CA4C941A84D1D5001F2F30 /* SocketIOTransportWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportWebsocket.h; sourceTree = "<group>"; };
+		E0CA4C951A84D1D5001F2F30 /* SocketIOTransportWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportWebsocket.m; sourceTree = "<group>"; };
+		E0CA4C961A84D1D5001F2F30 /* SocketIOTransportXHR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOTransportXHR.h; sourceTree = "<group>"; };
+		E0CA4C971A84D1D5001F2F30 /* SocketIOTransportXHR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOTransportXHR.m; sourceTree = "<group>"; };
+		E0CA4C991A84D1D5001F2F30 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		E0CA4C9A1A84D1D5001F2F30 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		E0CA4C9B1A84D1D5001F2F30 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		E0CA4CA41A84D585001F2F30 /* DemoMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMessagesViewController.h; sourceTree = "<group>"; };
+		E0CA4CA51A84D585001F2F30 /* DemoMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMessagesViewController.m; sourceTree = "<group>"; };
+		E0CA4CA61A84D585001F2F30 /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
+		E0CA4CA71A84D585001F2F30 /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
+		EAB78C3BA8F4CD9EED803987 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +95,7 @@
 				B20B256D16773678005F5A82 /* UIKit.framework in Frameworks */,
 				B20B256F16773678005F5A82 /* Foundation.framework in Frameworks */,
 				B20B257116773678005F5A82 /* CoreGraphics.framework in Frameworks */,
+				43503C869DD62A3C04146D0B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +108,7 @@
 				B20B257216773678005F5A82 /* PomeloChat */,
 				B20B256B16773678005F5A82 /* Frameworks */,
 				B20B256916773678005F5A82 /* Products */,
+				D27376296EA092B6637BDA71 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +129,7 @@
 				B20B256C16773678005F5A82 /* UIKit.framework */,
 				B20B256E16773678005F5A82 /* Foundation.framework */,
 				B20B257016773678005F5A82 /* CoreGraphics.framework */,
+				8A9ADE8201222BEED3810122 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,9 +137,9 @@
 		B20B257216773678005F5A82 /* PomeloChat */ = {
 			isa = PBXGroup;
 			children = (
-				B2933D761682BA1500A15757 /* Pomelo */,
-				B20B25901677369F005F5A82 /* SocketRocket */,
-				B20B258F1677368A005F5A82 /* SocketIO */,
+				E0CA4C871A84D1D5001F2F30 /* Pomelo */,
+				E0CA4C8C1A84D1D5001F2F30 /* SocketIO */,
+				E0CA4C981A84D1D5001F2F30 /* SocketRocket */,
 				B20B257B16773678005F5A82 /* AppDelegate.h */,
 				B20B257C16773678005F5A82 /* AppDelegate.m */,
 				B20B257316773678005F5A82 /* Supporting Files */,
@@ -146,9 +148,10 @@
 				B280B8BC168C4806002B48AF /* LoginViewController.xib */,
 				B280B8BF168C506B002B48AF /* ContactsViewController.h */,
 				B280B8C0168C506B002B48AF /* ContactsViewController.m */,
-				B280B8C2168C5248002B48AF /* ChatViewController.h */,
-				B280B8C3168C5248002B48AF /* ChatViewController.m */,
-				B280B8C4168C5248002B48AF /* ChatViewController.xib */,
+				E0CA4CA41A84D585001F2F30 /* DemoMessagesViewController.h */,
+				E0CA4CA51A84D585001F2F30 /* DemoMessagesViewController.m */,
+				E0CA4CA61A84D585001F2F30 /* DemoModelData.h */,
+				E0CA4CA71A84D585001F2F30 /* DemoModelData.m */,
 			);
 			path = PomeloChat;
 			sourceTree = "<group>";
@@ -167,47 +170,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B20B258F1677368A005F5A82 /* SocketIO */ = {
+		D27376296EA092B6637BDA71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B26482DE168949FC006D39A1 /* SocketIO.h */,
-				B26482DF168949FC006D39A1 /* SocketIO.m */,
-				B26482E0168949FC006D39A1 /* SocketIOJSONSerialization.h */,
-				B26482E1168949FC006D39A1 /* SocketIOJSONSerialization.m */,
-				B26482E2168949FC006D39A1 /* SocketIOPacket.h */,
-				B26482E3168949FC006D39A1 /* SocketIOPacket.m */,
-				B26482E4168949FC006D39A1 /* SocketIOTransport.h */,
-				B26482E5168949FC006D39A1 /* SocketIOTransportWebsocket.h */,
-				B26482E6168949FC006D39A1 /* SocketIOTransportWebsocket.m */,
-				B26482E7168949FC006D39A1 /* SocketIOTransportXHR.h */,
-				B26482E8168949FC006D39A1 /* SocketIOTransportXHR.m */,
+				EAB78C3BA8F4CD9EED803987 /* Pods.debug.xcconfig */,
+				A84DDB00CA54D58C476A8963 /* Pods.release.xcconfig */,
 			);
-			name = SocketIO;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		B20B25901677369F005F5A82 /* SocketRocket */ = {
+		E0CA4C871A84D1D5001F2F30 /* Pomelo */ = {
 			isa = PBXGroup;
 			children = (
-				B20B25A716773A9B005F5A82 /* base64.c */,
-				B20B25A816773A9B005F5A82 /* base64.h */,
-				B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */,
-				B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */,
-				B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */,
-				B20B25AC16773A9B005F5A82 /* SRWebSocket.h */,
-				B20B25AD16773A9B005F5A82 /* SRWebSocket.m */,
+				E0CA4C881A84D1D5001F2F30 /* Pomelo.h */,
+				E0CA4C891A84D1D5001F2F30 /* Pomelo.m */,
+				E0CA4C8A1A84D1D5001F2F30 /* PomeloProtocol.h */,
+				E0CA4C8B1A84D1D5001F2F30 /* PomeloProtocol.m */,
 			);
-			name = SocketRocket;
+			path = Pomelo;
 			sourceTree = "<group>";
 		};
-		B2933D761682BA1500A15757 /* Pomelo */ = {
+		E0CA4C8C1A84D1D5001F2F30 /* SocketIO */ = {
 			isa = PBXGroup;
 			children = (
-				B245D82E168E871300879092 /* Pomelo.h */,
-				B245D82F168E871300879092 /* Pomelo.m */,
-				B245D830168E871300879092 /* PomeloProtocol.h */,
-				B245D831168E871300879092 /* PomeloProtocol.m */,
+				E0CA4C8D1A84D1D5001F2F30 /* SocketIO.h */,
+				E0CA4C8E1A84D1D5001F2F30 /* SocketIO.m */,
+				E0CA4C8F1A84D1D5001F2F30 /* SocketIOJSONSerialization.h */,
+				E0CA4C901A84D1D5001F2F30 /* SocketIOJSONSerialization.m */,
+				E0CA4C911A84D1D5001F2F30 /* SocketIOPacket.h */,
+				E0CA4C921A84D1D5001F2F30 /* SocketIOPacket.m */,
+				E0CA4C931A84D1D5001F2F30 /* SocketIOTransport.h */,
+				E0CA4C941A84D1D5001F2F30 /* SocketIOTransportWebsocket.h */,
+				E0CA4C951A84D1D5001F2F30 /* SocketIOTransportWebsocket.m */,
+				E0CA4C961A84D1D5001F2F30 /* SocketIOTransportXHR.h */,
+				E0CA4C971A84D1D5001F2F30 /* SocketIOTransportXHR.m */,
 			);
-			name = Pomelo;
+			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		E0CA4C981A84D1D5001F2F30 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA4C991A84D1D5001F2F30 /* SocketRocket-Prefix.pch */,
+				E0CA4C9A1A84D1D5001F2F30 /* SRWebSocket.h */,
+				E0CA4C9B1A84D1D5001F2F30 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20B258C16773678005F5A82 /* Build configuration list for PBXNativeTarget "PomeloChat" */;
 			buildPhases = (
+				3B7964204F99D1081F7F54EA /* Check Pods Manifest.lock */,
 				B20B256416773678005F5A82 /* Sources */,
 				B20B256516773678005F5A82 /* Frameworks */,
 				B20B256616773678005F5A82 /* Resources */,
+				5212E0B2429F1CF02F7C5F6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,32 +276,63 @@
 				B20B258116773678005F5A82 /* Default@2x.png in Resources */,
 				B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */,
 				B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */,
-				B280B8C6168C5248002B48AF /* ChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7964204F99D1081F7F54EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5212E0B2429F1CF02F7C5F6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B20B256416773678005F5A82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B245D833168E876400879092 /* Pomelo.m in Sources */,
-				B245D835168E876400879092 /* PomeloProtocol.m in Sources */,
-				B26482EA16898055006D39A1 /* SocketIO.m in Sources */,
-				B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */,
-				B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */,
-				B26482F116898055006D39A1 /* SocketIOTransportWebsocket.m in Sources */,
-				B26482F316898055006D39A1 /* SocketIOTransportXHR.m in Sources */,
 				B20B257916773678005F5A82 /* main.m in Sources */,
 				B20B257D16773678005F5A82 /* AppDelegate.m in Sources */,
-				B20B25AE16773A9B005F5A82 /* base64.c in Sources */,
-				B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */,
-				B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */,
+				E0CA4CA01A84D1D5001F2F30 /* SocketIOPacket.m in Sources */,
 				B280B8BD168C4806002B48AF /* LoginViewController.m in Sources */,
 				B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */,
-				B280B8C5168C5248002B48AF /* ChatViewController.m in Sources */,
+				E0CA4CA81A84D585001F2F30 /* DemoMessagesViewController.m in Sources */,
+				E0CA4CA21A84D1D5001F2F30 /* SocketIOTransportXHR.m in Sources */,
+				E0CA4C9D1A84D1D5001F2F30 /* PomeloProtocol.m in Sources */,
+				E0CA4CA11A84D1D5001F2F30 /* SocketIOTransportWebsocket.m in Sources */,
+				E0CA4C9E1A84D1D5001F2F30 /* SocketIO.m in Sources */,
+				E0CA4C9C1A84D1D5001F2F30 /* Pomelo.m in Sources */,
+				E0CA4CA31A84D1D5001F2F30 /* SRWebSocket.m in Sources */,
+				E0CA4CA91A84D585001F2F30 /* DemoModelData.m in Sources */,
+				E0CA4C9F1A84D1D5001F2F30 /* SocketIOJSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +372,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -352,7 +393,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -361,11 +402,12 @@
 		};
 		B20B258D16773678005F5A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB78C3BA8F4CD9EED803987 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
 				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,11 +415,12 @@
 		};
 		B20B258E16773678005F5A82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84DDB00CA54D58C476A8963 /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
 				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

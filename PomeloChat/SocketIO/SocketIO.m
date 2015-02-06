@@ -578,7 +578,7 @@ NSString* const SocketIOException = @"SocketIOException";
 {
     // check for server status code (http://gigliwood.com/weblog/Cocoa/Q__When_is_an_conne.html)
     if ([response respondsToSelector:@selector(statusCode)]) {
-        int statusCode = [((NSHTTPURLResponse *)response) statusCode];
+        int statusCode = (int)[((NSHTTPURLResponse *)response) statusCode];
         DEBUGLOG(@"didReceiveResponse() %i", statusCode);
         
         if (statusCode >= 400) {
@@ -611,7 +611,7 @@ NSString* const SocketIOException = @"SocketIOException";
     _isConnecting = NO;
     
     if ([_delegate respondsToSelector:@selector(socketIO:onError:)]) {
-        NSMutableDictionary *errorInfo = [NSDictionary dictionaryWithObject:error forKey:NSLocalizedDescriptionKey];
+        NSMutableDictionary *errorInfo = [[NSDictionary dictionaryWithObject:error forKey:NSLocalizedDescriptionKey] mutableCopy];
         
         NSError *err = [NSError errorWithDomain:SocketIOError
                                            code:SocketIOHandshakeFailed
@@ -619,13 +619,15 @@ NSString* const SocketIOException = @"SocketIOException";
         
         [_delegate socketIO:self onError:err];
     }
+#if 0
     // TODO: deprecated - to be removed
     else if ([_delegate respondsToSelector:@selector(socketIOHandshakeFailed:)]) {
         [_delegate socketIOHandshakeFailed:self];
     }
+#endif
 }
 
-- (void) connectionDidFinishLoading:(NSURLConnection *)connection 
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection
 { 	
  	NSString *responseString = [[NSString alloc] initWithData:_httpRequestData encoding:NSASCIIStringEncoding];
 
@@ -700,10 +702,12 @@ NSString* const SocketIOException = @"SocketIOException";
         if ([_delegate respondsToSelector:@selector(socketIO:onError:)]) {
             [_delegate socketIO:self onError:error];
         }
+#if 0
         // TODO: deprecated - to be removed
         else if ([_delegate respondsToSelector:@selector(socketIO:failedToConnectWithError:)]) {
             [_delegate socketIO:self failedToConnectWithError:error];
         }
+#endif
         
         // make sure to do call all cleanup code
         [self onDisconnect:error];
