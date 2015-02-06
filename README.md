@@ -10,7 +10,7 @@ A chat demo branch created by little2s based on pomelo [iOS client](https://gith
  get the source code
 
 ```bash
-git clone git://github.com/little2s/pomelo-ioschat.git
+git clone https://github.com/little2s/pomelo-ioschat.git
 ```
 
 then open the pomelo-ioschat dir and install the dependencies
