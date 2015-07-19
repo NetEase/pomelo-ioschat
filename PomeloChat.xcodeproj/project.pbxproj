@@ -25,7 +25,6 @@
 		B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C0168C506B002B48AF /* ContactsViewController.m */; };
 		E05134AA1B5BA05A00297475 /* Pomelo.m in Sources */ = {isa = PBXBuildFile; fileRef = E05134A71B5BA05A00297475 /* Pomelo.m */; };
 		E05134AB1B5BA05A00297475 /* PomeloProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E05134A91B5BA05A00297475 /* PomeloProtocol.m */; };
-		E05134AD1B5BA17200297475 /* PomeloSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E05134AC1B5BA17200297475 /* PomeloSDK.podspec */; };
 		E0CA4CA81A84D585001F2F30 /* DemoMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4CA51A84D585001F2F30 /* DemoMessagesViewController.m */; };
 		E0CA4CA91A84D585001F2F30 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = E0CA4CA71A84D585001F2F30 /* DemoModelData.m */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		E05134A71B5BA05A00297475 /* Pomelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomelo.m; sourceTree = "<group>"; };
 		E05134A81B5BA05A00297475 /* PomeloProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomeloProtocol.h; sourceTree = "<group>"; };
 		E05134A91B5BA05A00297475 /* PomeloProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomeloProtocol.m; sourceTree = "<group>"; };
-		E05134AC1B5BA17200297475 /* PomeloSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PomeloSDK.podspec; sourceTree = "<group>"; };
 		E0CA4CA41A84D585001F2F30 /* DemoMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMessagesViewController.h; sourceTree = "<group>"; };
 		E0CA4CA51A84D585001F2F30 /* DemoMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMessagesViewController.m; sourceTree = "<group>"; };
 		E0CA4CA61A84D585001F2F30 /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		B20B255D16773678005F5A82 = {
 			isa = PBXGroup;
 			children = (
-				E05134AC1B5BA17200297475 /* PomeloSDK.podspec */,
 				E05134A51B5BA05A00297475 /* Pomelo */,
 				B20B257216773678005F5A82 /* PomeloChat */,
 				B20B256B16773678005F5A82 /* Frameworks */,
@@ -229,7 +226,6 @@
 				B20B258116773678005F5A82 /* Default@2x.png in Resources */,
 				B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */,
 				B280B8BE168C4806002B48AF /* LoginViewController.xib in Resources */,
-				E05134AD1B5BA17200297475 /* PomeloSDK.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
