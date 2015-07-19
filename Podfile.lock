@@ -1,13 +1,19 @@
 PODS:
-  - JSQMessagesViewController (6.1.3):
+  - JSQMessagesViewController (7.1.0):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - socket.IO (0.5.2):
+    - SocketRocket (~> 0.2)
+  - SocketRocket (0.4)
 
 DEPENDENCIES:
-  - JSQMessagesViewController
+  - JSQMessagesViewController (= 7.1.0)
+  - socket.IO (= 0.5.2)
 
 SPEC CHECKSUMS:
-  JSQMessagesViewController: e93a288a9662d4519c95a28a8c0eec10beae1bfc
-  JSQSystemSoundPlayer: 55528c699a283aae2220d3ae7b8b527d2ecef4b4
+  JSQMessagesViewController: ca11f86fa68ca70835f05e169df9244147c1dc40
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  socket.IO: eaaaea33481d8a81d8f78e331f0c72ba44758036
+  SocketRocket: 01443933b7bc362621325f4607b80b4286a99707
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.37.2
