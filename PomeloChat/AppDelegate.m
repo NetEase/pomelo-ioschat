@@ -23,7 +23,7 @@
     LoginViewController *root = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     root.pomelo = pomelo;
     self.navController = [[UINavigationController alloc] initWithRootViewController:root];
-    [self.window addSubview:navController.view];
+	self.window.rootViewController = self.navController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
