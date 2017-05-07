@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "ContactsViewController.h"
 
+#define SERVER_ADDRESS @"192.168.1.15"
+
 @interface LoginViewController ()
 
 @property (strong, nonatomic) ContactsViewController *contactsViewController;
@@ -39,7 +41,7 @@
     NSString *channel = channelText.text;
     
     if (([name length] > 0) && ([channel length] > 0)) {
-        [pomelo connectToHost:@"127.0.0.1" onPort:3014 withCallback:^(Pomelo *p){
+        [pomelo connectToHost:SERVER_ADDRESS onPort:3014 withCallback:^(Pomelo *p){
             NSDictionary *params = [NSDictionary dictionaryWithObject:name forKey:@"uid"];
             [pomelo requestWithRoute:@"gate.gateHandler.queryEntry" andParams:params andCallback:^(NSDictionary *result){
                 [pomelo disconnectWithCallback:^(Pomelo *p){
