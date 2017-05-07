@@ -69,8 +69,9 @@
 {
     [pomelo onRoute:@"onChat" withCallback:^(NSDictionary *data){
         NSLog(@"onChat------");
-        NSString *target = [[data objectForKey:@"target"] isEqualToString:@"*"] ? @"" : @" to you";
-        [chatStr appendFormat:@"%@ says%@: %@\n", [data objectForKey:@"from"], target, [data objectForKey:@"msg"] ];
+		NSDictionary *dataDic = [data objectForKey:@"body"];
+        NSString *target = [[dataDic objectForKey:@"target"] isEqualToString:@"*"] ? @"" : @" to you";
+        [chatStr appendFormat:@"%@ says%@: %@\n", [dataDic objectForKey:@"from"], target, [dataDic objectForKey:@"msg"] ];
         [self updateChat];
     }];
 }

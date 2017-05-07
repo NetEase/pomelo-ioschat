@@ -309,7 +309,7 @@ static __strong NSData *CRLFCRLF;
     _workQueue = dispatch_queue_create(NULL, DISPATCH_QUEUE_SERIAL);
     
     _callbackQueue = dispatch_get_main_queue();
-    dispatch_retain(_callbackQueue);
+//    dispatch_retain(_callbackQueue);
     
     _readBuffer = [[NSMutableData alloc] init];
     _outputBuffer = [[NSMutableData alloc] init];
@@ -329,8 +329,8 @@ static __strong NSData *CRLFCRLF;
     [_inputStream close];
     [_outputStream close];
     
-    dispatch_release(_callbackQueue);
-    dispatch_release(_workQueue);
+//    dispatch_release(_callbackQueue);
+//    dispatch_release(_workQueue);
     
     if (_receivedHTTPHeaders) {
         CFRelease(_receivedHTTPHeaders);

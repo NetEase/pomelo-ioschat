@@ -16,8 +16,6 @@
 		B20B257F16773678005F5A82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B257E16773678005F5A82 /* Default.png */; };
 		B20B258116773678005F5A82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258016773678005F5A82 /* Default@2x.png */; };
 		B20B258316773678005F5A82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20B258216773678005F5A82 /* Default-568h@2x.png */; };
-		B20B25AE16773A9B005F5A82 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = B20B25A716773A9B005F5A82 /* base64.c */; };
-		B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */; };
 		B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B20B25AD16773A9B005F5A82 /* SRWebSocket.m */; };
 		B20B25BE167745F0005F5A82 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BD167745F0005F5A82 /* libicucore.dylib */; };
 		B20B25C016774600005F5A82 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B25BF16774600005F5A82 /* CFNetwork.framework */; };
@@ -34,6 +32,8 @@
 		B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C0168C506B002B48AF /* ContactsViewController.m */; };
 		B280B8C5168C5248002B48AF /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B280B8C3168C5248002B48AF /* ChatViewController.m */; };
 		B280B8C6168C5248002B48AF /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B280B8C4168C5248002B48AF /* ChatViewController.xib */; };
+		EA4750841EB07467001EF118 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = EA47507F1EB07467001EF118 /* base64.c */; };
+		EA4750851EB07467001EF118 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4750821EB07467001EF118 /* NSData+SRB64Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,11 +50,6 @@
 		B20B257E16773678005F5A82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B20B258016773678005F5A82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B20B258216773678005F5A82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		B20B25A716773A9B005F5A82 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
-		B20B25A816773A9B005F5A82 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
-		B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
-		B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
 		B20B25AC16773A9B005F5A82 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
 		B20B25AD16773A9B005F5A82 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
 		B20B25BD167745F0005F5A82 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -83,6 +78,11 @@
 		B280B8C2168C5248002B48AF /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B280B8C3168C5248002B48AF /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B280B8C4168C5248002B48AF /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		EA47507F1EB07467001EF118 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
+		EA4750801EB07467001EF118 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
+		EA4750811EB07467001EF118 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		EA4750821EB07467001EF118 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		EA4750831EB07467001EF118 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SocketRocket-Prefix.pch"; path = "SocketRocket/SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,11 +188,11 @@
 		B20B25901677369F005F5A82 /* SocketRocket */ = {
 			isa = PBXGroup;
 			children = (
-				B20B25A716773A9B005F5A82 /* base64.c */,
-				B20B25A816773A9B005F5A82 /* base64.h */,
-				B20B25A916773A9B005F5A82 /* NSData+SRB64Additions.h */,
-				B20B25AA16773A9B005F5A82 /* NSData+SRB64Additions.m */,
-				B20B25AB16773A9B005F5A82 /* SocketRocket-Prefix.pch */,
+				EA47507F1EB07467001EF118 /* base64.c */,
+				EA4750801EB07467001EF118 /* base64.h */,
+				EA4750811EB07467001EF118 /* NSData+SRB64Additions.h */,
+				EA4750821EB07467001EF118 /* NSData+SRB64Additions.m */,
+				EA4750831EB07467001EF118 /* SocketRocket-Prefix.pch */,
 				B20B25AC16773A9B005F5A82 /* SRWebSocket.h */,
 				B20B25AD16773A9B005F5A82 /* SRWebSocket.m */,
 			);
@@ -238,6 +238,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "netease pomelo team";
+				TargetAttributes = {
+					B20B256716773678005F5A82 = {
+						DevelopmentTeam = XUUJD5P9J8;
+					};
+				};
 			};
 			buildConfigurationList = B20B256216773678005F5A82 /* Build configuration list for PBXProject "PomeloChat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -277,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA4750851EB07467001EF118 /* NSData+SRB64Additions.m in Sources */,
 				B245D833168E876400879092 /* Pomelo.m in Sources */,
 				B245D835168E876400879092 /* PomeloProtocol.m in Sources */,
+				EA4750841EB07467001EF118 /* base64.c in Sources */,
 				B26482EA16898055006D39A1 /* SocketIO.m in Sources */,
 				B26482EC16898055006D39A1 /* SocketIOJSONSerialization.m in Sources */,
 				B26482EE16898055006D39A1 /* SocketIOPacket.m in Sources */,
@@ -286,8 +293,6 @@
 				B26482F316898055006D39A1 /* SocketIOTransportXHR.m in Sources */,
 				B20B257916773678005F5A82 /* main.m in Sources */,
 				B20B257D16773678005F5A82 /* AppDelegate.m in Sources */,
-				B20B25AE16773A9B005F5A82 /* base64.c in Sources */,
-				B20B25AF16773A9B005F5A82 /* NSData+SRB64Additions.m in Sources */,
 				B20B25B016773A9B005F5A82 /* SRWebSocket.m in Sources */,
 				B280B8BD168C4806002B48AF /* LoginViewController.m in Sources */,
 				B280B8C1168C506B002B48AF /* ContactsViewController.m in Sources */,
@@ -362,10 +367,12 @@
 		B20B258D16773678005F5A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XUUJD5P9J8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
 				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,10 +381,12 @@
 		B20B258E16773678005F5A82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XUUJD5P9J8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PomeloChat/PomeloChat-Prefix.pch";
 				INFOPLIST_FILE = "PomeloChat/PomeloChat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

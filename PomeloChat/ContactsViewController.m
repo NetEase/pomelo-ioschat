@@ -50,7 +50,8 @@
 {
     [pomelo onRoute:@"onAdd" withCallback:^(NSDictionary *data){
         NSLog(@"user add -----");
-        NSString *name = [data objectForKey:@"user"];
+        NSDictionary *bodyDic = [data objectForKey:@"body"];
+		NSString *name = [bodyDic objectForKey:@"user"];
         [self.tableView beginUpdates];
         [contactList addObject:name];
         NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[contactList count]-1 inSection:0]];
